@@ -4,6 +4,7 @@ import org.cloudburstmc.protocol.bedrock.packet.PlayStatusPacket
 import org.cloudburstmc.protocol.bedrock.packet.ResourcePacksInfoPacket
 import org.jukeboxmc.server.JukeboxServer
 import org.jukeboxmc.server.player.JukeboxPlayer
+import java.util.UUID
 
 /**
  * @author Kaooot
@@ -21,7 +22,7 @@ class LoginSequenceUtil {
             server.getResourcePackManager().getResourcePacks().forEach {
                 resourcePacksInfoPacket.resourcePackInfos.add(
                     ResourcePacksInfoPacket.Entry(
-                        it.getUuid(),
+                        UUID.fromString(it.getUuid()),
                         it.getVersion(),
                         it.getSize(),
                         "",
