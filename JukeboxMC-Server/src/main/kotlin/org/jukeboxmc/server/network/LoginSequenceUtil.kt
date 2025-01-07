@@ -27,7 +27,7 @@ class LoginSequenceUtil {
                         it.getSize(),
                         "",
                         "",
-                        it.getUuid(),
+                        UUID.fromString(it.getUuid()),
                         false,
                         false,
                         false
