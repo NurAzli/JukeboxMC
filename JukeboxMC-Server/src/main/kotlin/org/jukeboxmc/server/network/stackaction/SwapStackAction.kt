@@ -42,7 +42,8 @@ class SwapStackAction : StackAction<SwapAction> {
                         sourceItem.getAmount(),
                         sourceItem.getStackNetworkId(),
                         sourceItem.getDisplayName(),
-                        sourceItem.getDurability()
+                        sourceItem.getDurability(),
+                        sourceItem.getFilteredCustomName()
                     )
                 ),
                 FullContainerName(destination.container, 0)
@@ -57,7 +58,8 @@ class SwapStackAction : StackAction<SwapAction> {
                         destinationItem.getAmount(),
                         destinationItem.getStackNetworkId(),
                         destinationItem.getDisplayName(),
-                        destinationItem.getDurability()
+                        destinationItem.getDurability(),
+                        destinationItem.getFilteredCustomName()
                     )
                 ),
                 FullContainerName(source.container, 0)

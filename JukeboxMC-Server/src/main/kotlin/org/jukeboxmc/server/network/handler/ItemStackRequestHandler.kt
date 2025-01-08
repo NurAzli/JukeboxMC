@@ -129,7 +129,8 @@ class ItemStackRequestHandler : PacketHandler<ItemStackRequestPacket> {
                 sourceItem.getAmount(),
                 sourceItem.getStackNetworkId(),
                 sourceItem.getDisplayName(),
-                sourceItem.getDurability()
+                sourceItem.getDurability(),
+                sourceItem.getFilteredCustomName()
             )
         )
         return ConsumeActionData(source.container, containerEntryList)

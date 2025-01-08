@@ -77,7 +77,8 @@ class PlaceStackAction: StackAction<PlaceAction> {
                             sourceItem.getAmount(),
                             sourceItem.getStackNetworkId(),
                             sourceItem.getDisplayName(),
-                            sourceItem.getDurability()
+                            sourceItem.getDurability(),
+                            sourceItem.getFilteredCustomName()
                         )
                     ),
                     FullContainerName(destination.container, 0)
@@ -145,7 +146,8 @@ class PlaceStackAction: StackAction<PlaceAction> {
                             finalSourceItem.getAmount(),
                             finalSourceItem.getStackNetworkId(),
                             finalSourceItem.getDisplayName(),
-                            finalSourceItem.getDurability()
+                            finalSourceItem.getDurability(),
+                            finalSourceItem.getFilteredCustomName()
                         )
                     ),
                     FullContainerName(source.container, 0)
@@ -161,7 +163,8 @@ class PlaceStackAction: StackAction<PlaceAction> {
                             finalDestinationItem.getAmount(),
                             finalDestinationItem.getStackNetworkId(),
                             finalDestinationItem.getDisplayName(),
-                            finalDestinationItem.getDurability()
+                            finalDestinationItem.getDurability(),
+                            finalDestinationItem.getFilteredCustomName()
                         )
                     ),
                     FullContainerName(destination.container, 0)
