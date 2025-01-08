@@ -22,12 +22,12 @@ class LoginSequenceUtil {
             server.getResourcePackManager().getResourcePacks().forEach {
                 resourcePacksInfoPacket.resourcePackInfos.add(
                     ResourcePacksInfoPacket.Entry(
-                        UUID.fromString(it.getUuid()).toString(),
+                        it.getUuid().toString(),
                         it.getVersion(),
                         it.getSize(),
                         "",
                         "",
-                        UUID.fromString(it.getUuid()).toString(),
+                        it.getUuid().toString(),
                         false,
                         false,
                         false
